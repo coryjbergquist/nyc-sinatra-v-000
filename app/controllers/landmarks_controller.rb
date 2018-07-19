@@ -10,8 +10,8 @@ class LandmarksController < ApplicationController
     redirect "/landmarks/show"
   end
 
-  get "/landmarks" do
-
+  get "/landmarks/show" do
+    @landmarks = Landmark.all
   end
 
 end
