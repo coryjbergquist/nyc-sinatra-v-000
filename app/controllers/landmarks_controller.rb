@@ -11,6 +11,7 @@ class LandmarksController < ApplicationController
 
   get "/landmarks/show" do
     @landmarks = Landmark.all
+    erb :"landmarks/show"
   end
 
 end
