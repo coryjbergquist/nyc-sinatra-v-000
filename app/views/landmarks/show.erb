@@ -8,3 +8,7 @@
     <td><%= @landmark.year_completed %></td>
   </tr>
 <table>
+
+<%@landmarks.each do |landmark|%>
+<%=landmark.name%>
+<%end%>
