@@ -9,5 +9,8 @@ class LandmarksController < ApplicationController
     redirect "/landmarks/show"
   end
 
+  get "/landmarks" do
+    binding.pry
+  end
 
 end
