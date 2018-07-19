@@ -8,6 +8,6 @@ if defined?(ActiveRecord::Migrator) && ActiveRecord::Migrator.needs_migration?
 end
 
 use FiguresController
-use Rack::MethodOverride
 use LandmarksController
+use Rack::MethodOverride
 run ApplicationController
