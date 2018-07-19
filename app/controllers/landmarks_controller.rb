@@ -10,6 +10,7 @@ class LandmarksController < ApplicationController
   end
 
   get "/landmarks/show" do
+    binding.pry
     @landmarks = Landmark.all
     erb :"/landmarks/show"
   end
