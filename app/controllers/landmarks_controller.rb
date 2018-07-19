@@ -6,10 +6,10 @@ class LandmarksController < ApplicationController
 
   post "/landmarks" do
     @landmark = Landmark.create(params[:landmark])
-    redirect "/landmarks/show"
+    redirect "/landmarks"
   end
 
-  get "/landmarks/show" do
+  get "/landmarks" do
     @landmarks = Landmark.all
     erb :"/landmarks/show"
   end
